@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Galería de Ropa Femenina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mi Galería de Ropa Femenina</h1>
+
+  <div class="visor">
+    <img id="imagen-principal" src="imagenes/imagen00.jpg.avif" alt="Imagen principal">
+  </div>
+
+  <div class="galeria">
+    <img src="imagenes/imagen01.jpg.webp" alt="Ropa 1" onclick="cambiarImagen(this)">
+    <!--<img src="imagenes/imagen02.jpg.webp" alt="Ropa 2" onclick="cambiarImagen(this)">-->
+    <img src="imagenes/imagen03.jpg.jpg" alt="Ropa 3" onclick="cambiarImagen(this)">
+    <img src="imagenes/imagen04.jpg.webp" alt="Ropa 4" onclick="cambiarImagen(this)">
+  </div>
+
+  <div class="lista-contenedor">
+    <h2>Sugerencias</h2>
+    <form id="formulario">
+      <div class="input-grupo">
+        <input type="text" id="itemInput" placeholder="Deja tu comentario">
+        <button type="submit">Agregar</button>
+      </div>
+    </form>
+    <ul id="lista"></ul>
+  </div>
+
+  <script src="javaS.js"></script>
+</body>
+</html>
